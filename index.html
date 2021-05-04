@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Apple's Online Shop</title>
+  <title>Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -9,86 +9,120 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-<!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Open modal
-</button>
 
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div class="jumbotron jumbotron-fluid bg-dark text-white">
+  <div class="container">
+    <h1>National ID System</h1>
+    <p class="lead">"an automated system for every Filipino"</p>
+  </div>
+</div>
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Registration Form</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        	<form>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				      <label for="inputEmail4">First Name</label>
-				      <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
-				    </div>
-				    <div class="form-group col-md-6">
-				      <label for="inputPassword4">Last Name</label>
-				      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputAddress">Birthday</label>
-				    <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
-				  </div>
-				  <div class="form-group">
-				    <label for="inputAddress2">Address </label>
-				    <input type="hidden" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-				  </div>
-				  <div class="form-row">
-				    <div class="form-group col-md-4">
-				      <label for="inputCity">Barangay</label>
-				      <input type="text" class="form-control" id="inputCity">
-				    </div>
-				    <div class="form-group col-md-4">
-				      <label for="inputState">Municipality</label>
-				      <input type="text" class="form-control" id="inputZip">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+    	<!--Table Head-->
+        <h2>Registered Members</h2>
+        <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID #</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12345</td>
+        <td>Maricris</td>
+        <td>Cacayuran</td>
+        <td>Rosario, La Union</td>
+      </tr>
+      <tr>
+        <td>12346</td>
+        <td>Byron</td>
+        <td>Rivera</td>
+        <td>Tubao, La Union</td>
+      </tr>
+      <tr>
+        <td>12347</td>
+        <td>Jeffrey</td>
+        <td>Cabutotan</td>
+        <td>Tubao, La Union</td>
+      </tr>
+      <tr>
+        <td>12348</td>
+        <td>Lexter</td>
+        <td>Garcia</td>
+        <td>Agoo, La Union</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
 
-				    </div>
-				    <div class="form-group col-md-4">
-				      <label for="inputZip">Province</label>
-				      <select id="inputState" class="form-control">
-				        <option>Ilocos Norte</option>
-				        <option>Ilocos Sur</option>
-				        <option>La Union</option>
-				        <option>Pangasinan</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <div class="form-check">
-				      <input class="form-check-input" type="checkbox" id="gridCheck">
-				      <label class="form-check-label" for="gridCheck">
-				        I agree to the terms and conditions
-				      </label>
-				    </div>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Register</button>
-				</form>
-      </div>
+    <div class="col-sm-6">
+      <h1>Registration Form</h1>
+      <form>
+          <div class="form-group">
+            <label for="inputAddress">ID #</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="ID Number">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Last Name</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address</label>
+            <input type="hidden" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">Barangay</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Municipality</label>
+              <input type="text" class="form-control" id="inputZip">
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip">Province</label>
+              <select id="inputState" class="form-control">
+                <option>Ilocos Norte</option>
+                <option>Ilocos Sur</option>
+                <option>La Union</option>
+                <option>Pangasinan</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+             <button type="submit" class="btn btn-primary col-lg-12">Register</button>
+           </div>
+        </form>
+         
+         
     </div>
   </div>
 </div>
 
+<!-- Footer -->
+<footer class="container-fluid bg-dark text-white">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright: PhilSys 1.0 iLex
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
 </html>
